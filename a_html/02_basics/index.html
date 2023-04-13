@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mein erstes HTML Dokument</title>
+  <meta name="description" content="Die Beschreibung meiner ersten Webseite.">
+</head>
+<body>
+
+  <!-- Kopfzeile -->
+  <header></header>
+
+  <main>
+    <!-- Headlines -->
+    <!-- Headline Tag ersten und zweiten Grades bitte nur einmal in einem HTML Dokument verwenden -->
+    <h1>Meine headline ersten Grades</h1>
+    <h2>Meine headline zweiten Grades</h2>
+    <h3>Meine headline dritten Grades</h3>
+    <h4>Meine headline vierten Grades</h4>
+    <h5>Meine headline fünften Grades</h5>
+    <h6>Meine headline sechsten Grades</h6>
+
+    <!-- Fließtext (Paragraph-Tag) -->
+    <p>
+      Lorem <strong>ipsum dolor sit</strong> amet <i>consectetur adipisicing</i> elit. Dolorem accusamus aut harum pariatur eos error dignissimos modi. Aliquam molestias illo officia omnis, et odit cum voluptatum doloremque perspiciatis ratione consectetur?
+      Possimus impedit dignissimos <mark>ratione voluptatum consequuntur</mark>! Voluptates alias quidem saepe unde laborum autem incidunt! Expedita voluptas omnis veritatis dolorum nobis quas nisi delectus dolor, neque eligendi corrupti explicabo, sequi dolorem.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusamus aut harum pariatur eos error dignissimos modi. Aliquam molestias illo officia omnis, et odit cum voluptatum doloremque perspiciatis ratione consectetur?
+      Possimus impedit <s>dignissimos ratione voluptatum</s> consequuntur! Voluptates alias quidem saepe <u>unde laborum autem incidunt</u>! Expedita voluptas omnis veritatis dolorum nobis quas nisi delectus dolor, neque eligendi corrupti explicabo, sequi dolorem.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusamus aut harum pariatur eos error dignissimos modi. Aliquam molestias illo officia omnis, et odit cum voluptatum doloremque perspiciatis ratione consectetur? Possimus impedit dignissimos ratione voluptatum consequuntur! Voluptates alias quidem saepe unde laborum autem incidunt! Expedita voluptas omnis veritatis dolorum nobis quas nisi delectus dolor, neque eligendi corrupti explicabo, sequi dolorem.
+    </p>
+
+    <blockquote>Ich bin ein Zitate</blockquote>
+
+    <!-- Listen -->
+    <!-- eine ungeordnete Liste -->
+    <ul>
+      <li>ein Listenpunkt</li>
+      <li>ein Listenpunkt</li>
+      <li>ein Listenpunkt</li>
+      <li>ein Listenpunkt</li>
+    </ul>
+
+    <!-- eine geordnete Liste -->
+    <ol>
+      <li>ein Listenpunkt</li>
+      <li>ein Listenpunkt</li>
+      <li>ein Listenpunkt</li>
+      <li>ein Listenpunkt</li>
+    </ol>
+
+    <!-- Tabelle -->
+    <table>
+      <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>Stadt</th>
+      </tr>
+      <tr>
+        <td>Daniel</td>
+        <td>Hauchler</td>
+        <td>04.07.1986</td>  
+      </tr>
+      <tr>
+        <td>Max</td>  
+        <td>Mustermann</td>
+        <td>14.03.1982</td>  
+      </tr>
+      <tr>
+        <td>Max</td>  
+        <td>Mustermann</td>
+        <td>14.03.1982</td>  
+      </tr>
+    </table>
+
+    <!-- Links -->
+    <a href="https://google.com" target="_blank" title="Link zu Google">Google</a>
+
+    <br>
+
+    <!-- Bilder -->
+    <img width="300px" src="https://s3-eu-central-1.amazonaws.com/sae-edu-gsa-wp-2022/wp-media-folder-sae-germany/wp-content/uploads/sites/2/2022/03/left-right-img-2022-ae-006-audio-engineering-studentin-an-mischpult.jpg" alt="">  
+    <img width="200px" src="assets/images/sae-img.jpg" alt="">
+
+    <!-- videos -->
+    <video controls autoplay muted>
+      <source src="assets/videos/mov_bbb.mp4" type="video/mp4">
+      <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    </video>
+
+    <!-- audio ohne Ressource -->
+    <audio controls>
+      <source src="" type="audio/ogg">
+      <source src="" type="audio/mpeg">
+    </audio>
+
+    <!-- iframes -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LyzacAqZ4oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="500px" height="500px" src="https://sae.edu" frameborder="0"></iframe>
+
+    <!-- Formulare und Inputfelder -->
+    <form action="https://meinewebseite/user/add?vorname=Daniel">
+      <label for="vorname">Dein Vorname</label>
+      <input id="vorname" name="vorname" type="text" placeholder="Max">
+      <label for="alter">Dein Alter</label>
+      <input id="alter" name="alter" type="number" placeholder="0211/32452345">
+      <button type="submit">Abschicken</button>
+    </form>
+  </main>
+  
+  <!-- Fußzeile -->
+  <footer></footer>
+  
+  <br>
+  <br>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <articles></articles>
+  </section>
+  
+  <aside></aside>
+
+</body>
+</html>
