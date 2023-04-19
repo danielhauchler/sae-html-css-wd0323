@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    div {
+      width: 200px;
+      height: 100px;
+      background-color: red;
+    }
+
+    body div div {
+      background-color: yellow;
+    }
+
+    /* > direct childs */
+    body div > div {
+      background-color: green;
+    }
+
+    div div {
+      background-color: blue;
+    }
+
+    div.meine-klasse {
+      background-color: purple;
+    }
+
+    #meine-erste-id,
+    #meine-zweite-id,
+    #meine-dritte-id {
+      width: 200px;
+      height: 50px;
+      background-color: orange;
+    }
+
+    
+    
+  </style>
+</head>
+<body>
+
+  <div></div>
+
+  <div>
+    <div>
+      <ul>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <span class="meine-klasse"></span>
+  <div class="meine-klasse"></div>
+
+  <div id="meine-erste-id"></div>
+  <div id="meine-zweite-id"></div>
+  <div id="meine-dritte-id"></div>
+
+</body>
+</html>

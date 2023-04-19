@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+
+    [href] {
+      color: red;
+    }
+
+    a[href] {}
+
+    a[href="https://google.com"] {
+      color: green;
+    }
+
+    /* * contains */
+    a[href*="witte"] {
+      color: black;
+    }
+
+    /* $ ending with */
+    a[href$=".com"] {
+      color: black;
+    }
+
+    /* ^ ending with */
+    a[href^="https://f"] {
+      color: yellow;
+    }
+
+    /* ~ contains */
+    div[data-attr~="box-1"] {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+    a[class*="meine"] {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <a class="meine-hosen" href="https://google.com">Google</a>
+  <a class="meine-schuhe" href="https://facebook.com">Facebook</a>
+  <a class="meine-socken" href="https://twitter.com">Twitter</a>
+
+  <div data-attr="box box-1 box-2"></div>
+</body>
+</html>
