@@ -7,6 +7,8 @@
   </head>
   <body>
 
+    <!-- Achtung tabindex -->
+
     <!-- Kopfzeile -->
     <header></header>
 
@@ -15,7 +17,7 @@
       <!-- Headline Tag ersten und zweiten Grades bitte nur einmal in einem HTML Dokument verwenden -->
       <h1>Meine headline ersten Grades</h1>
       <h2>Meine headline zweiten Grades</h2>
-      <h3>Meine headline dritten Grades</h3>
+      <h3 tabindex="1">Meine headline dritten Grades</h3>
       <h4>Meine headline vierten Grades</h4>
       <h5>Meine headline fünften Grades</h5>
       <h6>Meine headline sechsten Grades</h6>
@@ -48,7 +50,7 @@
       <ol>
         <li>ein Listenpunkt</li>
         <li>ein Listenpunkt</li>
-        <li>ein Listenpunkt</li>
+        <li tabindex="2">ein Listenpunkt</li>
         <li>ein Listenpunkt</li>
       </ol>
 
@@ -79,6 +81,8 @@
       <!-- Links -->
       <a href="https://google.com" target="_blank" title="Link zu Google">Google</a>
 
+      <a href="#mein-interner-abschnitt" title="Interner Link zum Abschnitt">Zum Abschnitt scrollen</a>
+
       <br>
 
       <!-- Bilder -->
@@ -107,6 +111,10 @@
         <input id="vorname" name="vorname" type="text" placeholder="Max">
         <label for="alter">Dein Alter</label>
         <input id="alter" name="alter" type="number" placeholder="0211/32452345">
+        <label for="legal">Datenschutzerklärung</label>
+        <input id="legal" name="legal" type="checkbox">
+        <label for="text">Datenschutzerklärung</label>
+        <textarea tabindex="3" name="text" id="text" cols="30" rows="10"></textarea>
         <button type="submit">Abschicken</button>
       </form>
     </main>
@@ -132,5 +140,6 @@
     
     <aside></aside>
 
+    <div id="mein-interner-abschnitt">Interner Abschnitt</div>
   </body>
 </html>
