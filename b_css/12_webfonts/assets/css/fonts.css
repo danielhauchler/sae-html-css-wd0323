@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'mein-font';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/mein-font.woff2) format('woff2');
+}

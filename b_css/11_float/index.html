@@ -6,29 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* Ihr solltet wissen, dass es float gibt, aber besser die Finger davon lassen - es gibt schönere Lösungen! */
     .box {
+      float: left;
       width: 250px;
       height: 250px;
-      /* display: inline-block;  */
     }
     .box1 {
       background-color: aqua;
     }
-
     .box2 {
-      background-color:aquamarine;
+      background-color:aquamarine
     }
+    .box3 {
+      background-color: royalblue;
+    }
+    .box3:after {
+      clear: both;
+    } /* -> https://www.mediaevent.de/css/position-clear.html */
 
-    p {
-      /* width: 500px */
-      display: inline-block;
-    }
   </style>
+
 </head>
 <body>
   <div class="box box1"></div>
   <div class="box box2"></div>
-  <p>Lorem ipsum dolor alias iste quas?</p>
-  <p>Lorem ipsum <strong>mein span Tag</strong> dolor ?</p>
+  <div class="box box3"></div>
 </body>
 </html>
