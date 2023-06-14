@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 10px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        @media (min-width: 480px) {
+            .container {
+                width: 460px;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 740px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                width: 980px;
+            }
+        }
+        @media (min-width: 992px) {
+
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+        @media (min-width: 768px) {
+            .h1 {
+                font-size: 60px;
+            }
+        }
+        @media (min-width: 992px) {
+            .h1 {
+                font-size: 980px;
+            }
+        }
+
+        
+        @media (orientation: landscape) {
+
+        }
+
+        @media (orientation: portrait) {
+            
+        }
+
+        /* https://wiki.selfhtml.org/wiki/CSS/Media_Queries/Medienmerkmale */
+        @media (min-aspect-ratio: 4/3) {
+
+        }
+
+        @media print {
+            h1 {
+                color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Überschirft</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptate molestias natus, fuga tempora corporis laudantium suscipit nesciunt ex mollitia consequuntur! Blanditiis similique temporibus saepe quam amet numquam adipisci repellendus!</p>
+    </div>
+</body>
+</html>

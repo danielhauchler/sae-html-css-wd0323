@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        @keyframes box-animation {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                background-color: aqua;
+            }
+
+            25% {
+                transform: translate(250px, 0) rotate(90deg);
+                background-color: aquamarine;
+            }
+
+            50% {
+                transform: translate(250px, 250px) rotate(180deg);
+                background-color: blueviolet;
+            }
+
+            75% {
+                transform: translate(0, 250px) rotate(270deg);
+                background-color: cornflowerblue;
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+                background-color: aqua;
+            }
+        }
+
+        div {
+            width: 250px;
+            height: 250px;
+            background-color: aquamarine;
+            
+            /* animation-duration: 4s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-name: box-animation; */
+
+            /* alternativ */
+            animation: box-animation 8s forwards infinite;
+        }
+
+        div:hover {
+            /* animation: box-animation 8s forwards infinite; */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- https://www.w3schools.com/css/css3_animations.asp -->
+
+    <div></div>
+</body>
+</html>

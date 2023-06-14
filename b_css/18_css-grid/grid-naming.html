@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: [line-c-1] 1fr [line-c-2] 1fr [line-c-3] 1fr [line-c-4]; 
+            grid-template-rows: [line-r-1] 1fr [line-r-2] 1fr [line-r-3] 1fr [line-r-4] 1fr [line-r-5]; 
+        }
+
+        .grid-container div {
+            background-color: aqua;
+            padding: 20px 0;
+        }
+
+        #bluebox {
+            background-color: blue;
+            grid-column: line-c-2 / line-c-4;
+            grid-row: line-r-2 / line-r-4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div id="bluebox">bluebox</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    .container {
+      height: 100vh; 
+      display: grid; 
+      grid-template-columns: repeat(4, minmax(100px, 25%));
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+      grid-template-rows: 100px 1fr 50px;
+      /* grid-template: repeat(4, minmax(100px, 25%)) / 200px 1fr 100px; */
+      grid-template-areas:
+        "header header header sidebar" 
+        "content content content sidebar" 
+        "footer footer footer sidebar" 
+      ;
+      grid-row-gap: 1px;
+      grid-column-gap: 1px;
+    }
+
+    .header { 
+      grid-area: header;
+      background-color: lightblue;
+    } 
+    .content { 
+      grid-area: content;
+      background-color: darkcyan;
+    } 
+    .sidebar { 
+      grid-area: sidebar;
+      background-color: darkseagreen;
+    } 
+    .footer { 
+      grid-area: footer;
+      background-color:cadetblue;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">header</div>
+    <div class="content">content</div>
+    <div class="sidebar">sidebar</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>
